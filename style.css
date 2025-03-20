@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+h3{
+    text-align: center;
+    color: #d95f84 ;
+}
+p{
+    font-weight: bold;
+}
+strike{
+    color: #898989;
+    font-size: 15px;
+}
+.off{
+    background-color: #d95f84; 
+    color: white; 
+    padding: 3px;
+    font-weight: 100 !important;
+}
+
+legend{
+    text-align: right;
+    background-color: #d95f84;
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.option:hover{
+    border-color: #ef5180;
+    background: #f6e6e6;
+    transform: scale(1.05);
+}
+.option input {
+    margin-right: 10px;
+}
+.details {
+    display: none;
+    margin-top: 10px;
+}
+.selected .details {
+    display: block;
+}
+select {
+    padding: 5px;
+    margin: 0 10px 5px 0;
+}
+.most-popular {
+    color: #d95f84;
+    font-weight: bold;
+}   
+
+.shipping {
+    font-size: 14px;
+    color: #666;
+    margin: 20px;
+}
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+
+}
+button {
+    
+    background-color: #d95f84;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+button:hover {
+    background-color: #a9395b;
+}
+
+.selected {
+    border: 2px solid;
+    border-color: #ef5180;
+    background: #f6e6e6;
+}
+
+.textbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    display: flex;
+    align-items: left;
+}

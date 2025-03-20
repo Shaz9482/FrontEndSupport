@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Selection</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h3>YAY! It's BOGO</h3>
+        <hr/>
+        <form id="form">
+        <div class="option" onclick="selectOption(this, 1)">
+            <div class="textbox">
+                <div class="right">
+                    <p>
+                        <input type="radio" name="bundle" value="$10.00" data-total="$10.00" /> 1 Unit 
+                        <span class="off">10% Off</span></p> 
+                      <p>Standard price </p>
+                </div>
+                <div class="left">
+                    <span>$10.00USD</span>
+                    <br/>
+                    <strike>$24.00USD</strike>
+                </div>
+            </div>
+            <div class="details">
+                <label>#1</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select>
+                    <option>Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                <br>
+                <label>#2</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select>
+                    <option>Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+            </div>
+        </div>
+        
+        <fieldset class="option" onclick="selectOption(this, 2)">
+            <legend>Most Popular</legend>
+        
+            <div class="textbox">
+                <div class="right">
+                    <input type="radio" name="bundle" value="$18.00" data-total="$18.00" /> 
+                    <p>2 Unit <span class="off">20% Off</span></p>
+                </div>
+                <div class="left">
+                    <span>$18.00USD</span>
+                    <br/>
+                    <strike>$24.00USD</strike>
+                </div>
+            </div>
+            <div class="details">
+                <label>#1</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select>
+                    <option>Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                <br>
+                <label>#2</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select>
+                    <option>Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <div class="option" onclick="selectOption(this, 3)">
+            <div class="textbox">
+                <div class="right">
+                    <input type="radio" name="bundle" value="$24.00" data-total="$24.00" />
+                    <p>3 Unit <span class="off">30% Off</span></p>
+                </div>
+                <div class="left">
+                    <span>$24.00 USD</span>
+                    <br/>
+                    <strike>$24.00 USD</strike>
+                </div>
+            </div>
+            <div class="details">
+                <label>#1</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select>
+                    <option>Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                <br>
+                <label>#2</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select>
+                    <option>Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+            </div>
+        </div>
+    
+</form>
+    <div>
+        <span class="shipping">Free Delivery</span>
+        <span class="total">Total: <span id="total-price">$</span>
+        <button id="add-to-cart">+ Add to Cart</button>
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
